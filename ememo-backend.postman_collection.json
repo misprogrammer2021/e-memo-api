@@ -1,0 +1,1373 @@
+{
+	"info": {
+		"_postman_id": "6c0d4604-5d54-4771-95a9-f880b9324f4a",
+		"name": "ememo-backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21741547"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "addUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Asma\",\r\n    \"departmentId\": 3,\r\n    \"jobTitle\": \"Executive II, IT Applications\",\r\n    \"companyId\": 1,\r\n    \"createdOn\": \"\",\r\n    \"updatedOn\": \"\",\r\n    \"createdById\": 1,\r\n    \"updatedById\": \"\",\r\n    \"deletedById\": \"\",\r\n    \"deletedOn\": \"\",\r\n    \"status\": \"ACTIVE\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/ememo/createUser",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ememo",
+								"createUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateUser",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"jobTitle\": \"Executive II, IT Applications\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/ememo/1/updateUser",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ememo",
+								"1",
+								"updateUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllUser",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/ememo/findAllUser",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ememo",
+								"findAllUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getOneUser",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/ememo/9/findOneUser",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ememo",
+								"9",
+								"findOneUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteUser",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/ememo/9/removeUser",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ememo",
+								"9",
+								"removeUser"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Department",
+			"item": [
+				{
+					"name": "addDepartment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"CEO'S OFFICE\",\r\n    \"createdOn\": \"\",\r\n    \"updatedOn\": \"\",\r\n    \"status\": \"ACTIVE\",\r\n    \"createdById\": 1,\r\n    \"updatedById\": 1,\r\n    \"deletedById\": \"\",\r\n    \"deletedOn\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/ememo/createDepartment",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ememo",
+								"createDepartment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllDepartment",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/ememo/findAllDepartment",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ememo",
+								"findAllDepartment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateDepartment",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"BRS1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/ememo/1/updateDepartment",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ememo",
+								"1",
+								"updateDepartment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getOneDepartment",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/ememo/1/findOneDepartment",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ememo",
+								"1",
+								"findOneDepartment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteDepartment",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/ememo/1/removeDepartment",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ememo",
+								"1",
+								"removeDepartment"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Company",
+			"item": [
+				{
+					"name": "addCompany",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"fsdgds\",\r\n    \"createdOn\": \"\",\r\n    \"updatedOn\": \"\",\r\n    \"status\": \"ACTIVE\",\r\n    \"createdById\": \"\",\r\n    \"updatedById\": \"\",\r\n    \"deletedById\": \"\",\r\n    \"deletedOn\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/ememo/createCompany",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ememo",
+								"createCompany"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllCompany",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/ememo/findAllCompany",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ememo",
+								"findAllCompany"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getOneCompany",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/ememo/1/findOneCompany",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ememo",
+								"1",
+								"findOneCompany"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateCompany",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Sunsuria Forum\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/ememo/1/updateCompany",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ememo",
+								"1",
+								"updateCompany"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteCompany",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/ememo/2/removeCompany",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ememo",
+								"2",
+								"removeCompany"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Project",
+			"item": [
+				{
+					"name": "addProject",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"AMPANG PROJECT\",\r\n    \"createdOn\": \"\",\r\n    \"updatedOn\": \"\",\r\n    \"createdById\": 1,\r\n    \"updatedById\": \"\",\r\n    \"deletedById\": \"\",\r\n    \"deletedOn\": \"\",\r\n    \"status\": \"ACTIVE\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/ememo/createProject",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ememo",
+								"createProject"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllProject",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/ememo/findAllProject",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ememo",
+								"findAllProject"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getOneProject",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/ememo/2/findOneProject",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ememo",
+								"2",
+								"findOneProject"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateProject",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"4 & 3 STOREY SHOP-OFFICE AT SEKSYEN 13\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/ememo/1/updateProject",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ememo",
+								"1",
+								"updateProject"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteProject",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/ememo/2/deleteProject",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ememo",
+								"2",
+								"deleteProject"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "MemoType",
+			"item": [
+				{
+					"name": "getAllMemoType",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/ememo/findAllMemoType",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ememo",
+								"findAllMemoType"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addMemoType",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"SALES PACKAGE\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/ememo/createMemoType",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ememo",
+								"createMemoType"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getOneMemoType",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/ememo/2/findOneMemoType",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ememo",
+								"2",
+								"findOneMemoType"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateMemoType",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"CREDIT ADMIN - REFERRAL FEE\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/ememo/1/updateMemoType",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ememo",
+								"1",
+								"updateMemoType"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteMemoType",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/ememo/2/removeMemoType",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ememo",
+								"2",
+								"removeMemoType"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Memo",
+			"item": [
+				{
+					"name": "addMemo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"addressTo\": \"aliah@sunsuria.com\",\r\n    \"from\": \"aliah@sunsuria.com\",\r\n    \"departmentId\": 3,\r\n    \"companyId\": 2,\r\n    \"projectId\": 2,\r\n    \"memoTypeId\": 2,\r\n    \"createdOn\": \"\",\r\n    \"updatedOn\": \"\",\r\n    \"submittedOn\": \"\",\r\n    \"userId\": 1,\r\n    \"status\": \"ACTIVE\",\r\n    \"subject\": \"TEST\",\r\n    \"content\": \"HI\"\r\n  \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/ememo/createMemo",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ememo",
+								"createMemo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllMemo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/ememo/findAllMemo",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ememo",
+								"findAllMemo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getOneMemo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/ememo/1/findOneMemo",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ememo",
+								"1",
+								"findOneMemo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateMemo",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"memoId\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/ememo/1/updateMemo",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ememo",
+								"1",
+								"updateMemo"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "MemoApproval",
+			"item": [
+				{
+					"name": "addMemoApproval",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"memoId\": 2,\r\n    \"groupId\": 2,\r\n    \"userId\": 4,\r\n    \"order\": 1,\r\n    \"memoStatus\": \"PENDING\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/ememo/createMemoApproval",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ememo",
+								"createMemoApproval"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllMemoApproval",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/ememo/findAllMemoApproval",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ememo",
+								"findAllMemoApproval"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateMemoApproval",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"order\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/ememo/1/updateMemoApproval",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ememo",
+								"1",
+								"updateMemoApproval"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getOneMemoApproval",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/ememo/1/findOneMemoApproval",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ememo",
+								"1",
+								"findOneMemoApproval"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteMemoApproval",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/ememo/1/removeMemoApproval",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ememo",
+								"1",
+								"removeMemoApproval"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Group",
+			"item": [
+				{
+					"name": "getOneGroup",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/ememo/1/findOneGroup",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ememo",
+								"1",
+								"findOneGroup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllGroup",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/ememo/findAllGroup",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ememo",
+								"findAllGroup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addGroup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"HR\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/ememo/createGroup",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ememo",
+								"createGroup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateGroup",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"IT & DIGITAL DEVELOPMENT\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/ememo/1/updateGroup",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ememo",
+								"1",
+								"updateGroup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteGroup",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/ememo/2/removeGroup",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ememo",
+								"2",
+								"removeGroup"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "MemoCcUser",
+			"item": [
+				{
+					"name": "getAllMemoCcUser",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/ememo/findAllMemoCcUser",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ememo",
+								"findAllMemoCcUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getOneMemoCcUser",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/ememo/1/findOneMemoCcUser",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ememo",
+								"1",
+								"findOneMemoCcUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addMemoCcUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"memoId\": 2,\r\n    \"userId\": 4\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/ememo/createMemoCcUser",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ememo",
+								"createMemoCcUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteMemoCcUser",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/ememo/1/removeMemoCcUser",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ememo",
+								"1",
+								"removeMemoCcUser"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "MemoComment",
+			"item": [
+				{
+					"name": "getAllMemoComment",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/ememo/findAllMemoComment",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ememo",
+								"findAllMemoComment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addMemoComment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"comments\": \"Good\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/ememo/createMemoComment",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ememo",
+								"createMemoComment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getOneMemoCommnet",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/ememo/2/findOneMemoComment",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ememo",
+								"2",
+								"findOneMemoComment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateMemoComment",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"comments\": \"Very good\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/ememo/1/updateMemoComment",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ememo",
+								"1",
+								"updateMemoComment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteMemoComment",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/ememo/2/removeMemoComment",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ememo",
+								"2",
+								"removeMemoComment"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "MemoAttachment",
+			"item": [
+				{
+					"name": "getAllMemoAttachment",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/ememo/findAllMemoAttachment",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ememo",
+								"findAllMemoAttachment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addMemoAttachment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"memoId\": 1,\r\n    \"userId\": 4,\r\n    \"url\": \"https://www.pinterest.com/pin/183310647320737285/\",\r\n    \"gspath\": \"faf\",\r\n    \"fileName\": \"Nobita\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/ememo/createMemoAttachment",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ememo",
+								"createMemoAttachment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateMemoAttachment",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fileName\": \"Doraemon\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/ememo/1/updateMemoAttachment",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ememo",
+								"1",
+								"updateMemoAttachment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteMemoAttachment",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/ememo/1/removeMemoAttachment",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ememo",
+								"1",
+								"removeMemoAttachment"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "MemoStatus",
+			"item": [
+				{
+					"name": "getAllMemoStatus",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/ememo/findAllMemoStatus",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ememo",
+								"findAllMemoStatus"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addMemoStatus",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"rejected\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/ememo/createMemoStatus",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ememo",
+								"createMemoStatus"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateMemoStatus",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"pending\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/ememo/updateMemoStatus/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ememo",
+								"updateMemoStatus",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteMemoStatus",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/ememo/removeMemoStatus/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ememo",
+								"removeMemoStatus",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
